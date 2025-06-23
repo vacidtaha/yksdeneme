@@ -214,7 +214,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                  <span>24 konu</span>
+                  <span>30 konu</span>
                   <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                 </div>
               </div>
@@ -247,7 +247,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                  <span>32 konu</span>
+                  <span>35 konu</span>
                   <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                 </div>
               </div>
@@ -280,7 +280,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                  <span>28 konu</span>
+                  <span>25 konu</span>
                   <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                 </div>
               </div>
@@ -313,7 +313,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                  <span>26 konu</span>
+                  <span>22 konu</span>
                   <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                 </div>
               </div>
@@ -448,7 +448,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>40 konu</span>
+                            <span>45 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -470,7 +470,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>26 konu</span>
+                            <span>28 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -492,7 +492,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>17 konu</span>
+                            <span>24 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -514,7 +514,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>18 konu</span>
+                            <span>32 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -548,7 +548,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>18 konu</span>
+                            <span>20 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -570,7 +570,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>14 konu</span>
+                            <span>25 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -592,7 +592,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>12 konu</span>
+                            <span>20 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -614,7 +614,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>8 konu</span>
+                            <span>15 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -648,7 +648,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>16 konu</span>
+                            <span>25 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -670,7 +670,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>14 konu</span>
+                            <span>20 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -692,7 +692,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>10 konu</span>
+                            <span>15 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
@@ -714,7 +714,7 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>8 konu</span>
+                            <span>12 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
