@@ -52,7 +52,7 @@ export function Header({ alwaysShow = false }: HeaderProps) {
         <div className="flex items-center h-full ml-8">
           <Image
             src="/yks.png"
-            alt="YKS"
+            alt="YKS Şekeri Ana Sayfa"
             width={160}
             height={110}
             priority

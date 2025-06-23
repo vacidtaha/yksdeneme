@@ -31,7 +31,7 @@ export function Footer() {
             <div className="flex justify-center md:justify-start md:absolute md:left-1/4 md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2">
               <Image
                 src="/yks.png"
-                alt="YKS Eri Logo"
+                alt="YKS Şekeri - Ücretsiz YKS TYT AYT hazırlık platformu"
                 width={150}
                 height={150}
                 className="rounded-xl"

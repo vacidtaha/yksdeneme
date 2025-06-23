@@ -99,7 +99,7 @@ export default function Home() {
           <div className="flex justify-center items-center h-full">
             <Image
               src="/yks.png"
-              alt="YKS"
+              alt="YKS Şekeri - YKS TYT AYT hazırlık platformu logosu"
               width={500}
               height={350}
               priority
