@@ -156,7 +156,7 @@ export default function IletisimPage() {
 
   if (isSuccess) {
     return (
-      <div className="min-h-screen" style={{backgroundColor: '#000000'}}>
+      <div className="min-h-screen" style={{backgroundColor: '#1d1d1f'}}>
         <Header alwaysShow={true} />
         
         <div className="min-h-screen flex items-center justify-center px-4 pt-20">
@@ -183,7 +183,7 @@ export default function IletisimPage() {
   }
 
     return (
-    <div className="min-h-screen" style={{backgroundColor: '#000000'}}>
+    <div className="min-h-screen" style={{backgroundColor: '#1d1d1f'}}>
       <style dangerouslySetInnerHTML={{__html: selectStyle}} />
       
       <Header alwaysShow={true} />
@@ -196,7 +196,7 @@ export default function IletisimPage() {
             İletişime Geçin
           </h1>
           <p className="text-lg max-w-2xl mx-auto" style={{color: '#86868b'}}>
-            Sorularınız, önerileriniz teknik destek ihtiyaçlarınız veya içeriğiniz gösteriliyorsa ve bizi dava etmek üzereyseniz öncelikle sakin olun ve bizimle iletişime geçin.
+            Sorularınız, önerileriniz teknik destek ihtiyaçlarınız veya içeriğiniz gösteriliyorsa ve bizi dava etmek üzereyseniz <span style={{color: '#ffffff', fontWeight: '600'}}>öncelikle sakin olun</span> ve bizimle iletişime geçin.
           </p>
         </div>
 
@@ -411,6 +411,7 @@ export default function IletisimPage() {
                            errors.category ? '#ff3b30' : 'rgba(255,255,255,0.1)'
                          }`,
                          color: '#f5f5f7',
+                         fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif',
                          backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e")`,
                          backgroundRepeat: 'no-repeat',
                          backgroundPosition: 'right 12px center',
@@ -448,6 +449,7 @@ export default function IletisimPage() {
                          backgroundColor: 'rgba(255,255,255,0.05)',
                          border: '1px solid rgba(255,255,255,0.1)',
                          color: '#f5f5f7',
+                         fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif',
                          backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e")`,
                          backgroundRepeat: 'no-repeat',
                          backgroundPosition: 'right 12px center',
@@ -509,8 +511,8 @@ export default function IletisimPage() {
                     disabled={isSubmitting}
                     className="w-full font-semibold py-4 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2"
                     style={{
-                      backgroundColor: isSubmitting ? 'rgba(255,255,255,0.1)' : '#007AFF',
-                      color: isSubmitting ? '#86868b' : '#ffffff',
+                      backgroundColor: isSubmitting ? 'rgba(255,255,255,0.1)' : '#ffffff',
+                      color: isSubmitting ? '#86868b' : '#000000',
                       cursor: isSubmitting ? 'not-allowed' : 'pointer'
                     }}
                   >

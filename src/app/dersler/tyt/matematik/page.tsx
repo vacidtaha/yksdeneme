@@ -142,7 +142,7 @@ export default function TytMatematikPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen text-white" style={{backgroundColor: '#2d2d2d'}}>
       <style>{`
         @keyframes gradient {
           0% { background-position: 0% 50%; }
@@ -228,12 +228,12 @@ export default function TytMatematikPage() {
         </div>
 
         {/* Ana İçerik - 3 Sütun */}
-        <div className="max-w-[1400px] mx-auto px-4">
-          <div className="grid grid-cols-12 gap-6 min-h-[600px]">
+        <div className="w-full">
+          <div className="flex min-h-[600px]">
             
-            {/* Sol Sütun - PDF ve Sorular */}
-            <div className="col-span-12 lg:col-span-3">
-              <div className="sticky top-40">
+            {/* Sol Sütun - PDF ve Sorular (0-20%) */}
+            <div className="w-[20%] flex justify-center">
+              <div className="sticky top-32 w-full max-w-xs">
                 {selectedTopic ? (
                   <div className="space-y-4">
                     {/* PDF Özet */}
@@ -332,9 +332,9 @@ export default function TytMatematikPage() {
               </div>
             </div>
 
-            {/* Orta Sütun - YouTube Videoları */}
-            <div className="col-span-12 lg:col-span-6">
-              <div className="sticky top-40">
+            {/* Orta Sütun - YouTube Videoları (20-70%) */}
+            <div className="w-[50%] flex justify-center">
+              <div className="sticky top-40 w-full max-w-4xl">
                 {selectedTopic ? (
                   <div>
                     <div className="mb-8">
@@ -445,10 +445,10 @@ export default function TytMatematikPage() {
               </div>
             </div>
 
-            {/* Sağ Sütun - Konu Başlıkları */}
-            <div className="col-span-12 lg:col-span-3 pl-12 -mr-4">
-              <div className="sticky top-40">
-                <div className="flex items-center justify-end mb-6">
+            {/* Sağ Sütun - Konu Başlıkları (70-100%) */}
+            <div className="w-[30%] flex justify-center">
+              <div className="sticky top-40 w-full max-w-xs">
+                <div className="flex items-center justify-center mb-6">
                   <div className="text-xs text-gray-500 mr-3">
                     {completedTopics.length}/{topics.reduce((acc, topic) => acc + topic.subTopics.length, 0)}
                   </div>

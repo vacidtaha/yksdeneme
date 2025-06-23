@@ -71,19 +71,19 @@ export default function Home() {
 
 
       {/* Hero Section - İki Kolon */}
-      <div className="min-h-screen flex flex-col py-12 px-2">
+      <div className="min-h-screen flex flex-col py-12 px-2 bg-gray-50">
         
         {/* Uyarı Kutusu */}
         {showWarning && (
           <div className="mb-6 max-w-4xl mx-auto px-4">
-            <div className="bg-red-800/30 border border-red-600/50 rounded-lg p-4">
+            <div className="bg-red-100 border border-red-300 rounded-lg p-4">
               <div className="flex justify-between items-start gap-4">
-                <p className="text-red-200 text-sm leading-relaxed">
-                  ⚠️ <strong>Uyarı:</strong> Bu site tamamen hayrına yapılmıştır. hiçbir reklam, işbirliği veya kâr amacı içermez. Buradaki içeriklerin resmi güncelliğini her zaman öğretmeninle, araştırarak ve ÖSYM duyurularıyla karşılaştır; "Patron o" biz sadece kolaylaştırıcı bir arayüz sunuyoruz.
+                <p className="text-red-800 text-sm leading-relaxed">
+                  ⚠️ <strong>Uyarı:</strong> Bu site tamamen hayrına yapılmıştır. hiçbir reklam, işbirliği veya kâr amacı içermez. Buradaki içeriklerin resmi güncelliğini her zaman öğretmeninle, araştırmalarınla ve ÖSYM duyurularıyla karşılaştır; biz sadece kolaylaştırıcı bir arayüz sunuyoruz.
                 </p>
                 <button 
                   onClick={() => setShowWarning(false)}
-                  className="text-red-300 hover:text-white text-xl flex-shrink-0"
+                  className="text-red-600 hover:text-red-800 text-xl flex-shrink-0"
                 >
                   ×
                 </button>
@@ -97,60 +97,62 @@ export default function Home() {
           
           {/* Sol Taraf - Logo */}
           <div className="flex justify-center items-center h-full">
-            <Image
-              src="/yks.png"
-              alt="YKS"
-              width={400}
-              height={280}
-              priority
-              className="rounded-lg shadow-2xl"
-            />
+            <div className="bg-black rounded-lg shadow-2xl p-6" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05)'}}>
+              <Image
+                src="/yks.png"
+                alt="YKS"
+                width={400}
+                height={280}
+                priority
+                className="rounded-lg"
+              />
+            </div>
           </div>
 
           {/* Sağ Taraf - Karşılama Mesajı */}
-          <div className="text-left space-y-4 text-gray-200 leading-relaxed pr-4">
-            <h2 className="text-3xl font-bold text-white mb-6">Hoş geldin</h2>
+          <div className="text-left space-y-4 text-gray-700 leading-relaxed pr-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Hoş geldin</h2>
             
             <p className="text-base">
-              Ben <span className="text-white font-semibold">Taha</span>. Bu siteyi can sıkıntısından ve bir iddia sonucu kurdum — (ben kazandım). Para beklentim sıfır; cüzdan zaten kilo yapıyor, o yüzden buraya <span className="text-white font-semibold">reklâm sıkıştırmaya hiç niyetim yok</span>. 
+              Ben <span className="text-gray-900 font-semibold">Taha</span>. Bu siteyi can sıkıntısından ve bir iddia sonucu kurdum — (ben kazandım). İşin gerçeği harcayamayacak kadar param var, o yüzden buraya <span className="text-gray-900 font-semibold">reklâm sıkıştırmaya hiç niyetim yok</span>. 
             </p>
             
             <p className="text-base">
-              Açık konuşayım: Bugün üniversite okumayı <span className="text-white font-semibold">hararetle savunduğum söylenemez</span>. Yine de "ille de sınava gireceğim" diyorsan, burası işini kolaylaştırır.
+              Açık konuşayım: Bugün üniversite okumayı <span className="text-gray-900 font-semibold">hararetle savunduğum söylenemez</span>. Yine de "ille de sınava gireceğim" diyorsan, burası işini kolaylaştırır.
             </p>
 
-            <h3 className="text-lg font-semibold text-white mb-4">Burada bulacakların</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Burada bulacakların</h3>
             
-            <div className="rounded-lg p-3 mb-2 flex items-start text-sm text-gray-300 max-w-lg" style={{backgroundColor: '#212529'}}>
-              <span className="text-gray-400 mr-2">•</span>
-              <span><strong>Güncel TYT/AYT konularının net haritası</strong> – "hangi başlık nerede" diye kaybolma.</span>
+            <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
+              <span className="text-blue-600 mr-2">•</span>
+              <span className="text-blue-800"><strong>Güncel TYT/AYT konularının net haritası</strong> – "hangi başlık nerede" diye kaybolma.</span>
             </div>
             
-            <div className="rounded-lg p-3 mb-2 flex items-start text-sm text-gray-300 max-w-lg" style={{backgroundColor: '#212529'}}>
-              <span className="text-gray-400 mr-2">•</span>
-              <span><strong>Seçilmiş YouTube dersleri</strong> – her konu için en anlaşılır, hocaların video listesi.</span>
+            <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
+              <span className="text-blue-600 mr-2">•</span>
+              <span className="text-blue-800"><strong>Seçilmiş YouTube dersleri</strong> – her konu için en anlaşılır, hocaların video listesi.</span>
             </div>
             
-            <div className="rounded-lg p-3 mb-2 flex items-start text-sm text-gray-300 max-w-lg" style={{backgroundColor: '#212529'}}>
-              <span className="text-gray-400 mr-2">•</span>
-              <span><strong>MEB damgalı örnek soru arşivi</strong> – yıl, PDF, cevap anahtarı tek tıkta.</span>
+            <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
+              <span className="text-blue-600 mr-2">•</span>
+              <span className="text-blue-800"><strong>MEB damgalı örnek soru arşivi</strong> – yıl, PDF, cevap anahtarı tek tıkta.</span>
             </div>
             
-            <div className="rounded-lg p-3 mb-4 flex items-start text-sm text-gray-300 max-w-lg" style={{backgroundColor: '#212529'}}>
-              <span className="text-gray-400 mr-2">•</span>
-              <span><strong>Cep boyu özetler</strong> – bir sayfalık "son tekrar" PDF'leri; indir, bastır, yapıştır.</span>
+            <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-4 flex items-start text-sm max-w-lg">
+              <span className="text-blue-600 mr-2">•</span>
+              <span className="text-blue-800"><strong>Cep boyu özetler</strong> – bir sayfalık "son tekrar" PDF'leri; indir, bastır, yapıştır.</span>
             </div>
 
             <p className="text-base">
-              <span className="text-white font-semibold">Müfredatı olabildiğince toparladım</span>; sitenin seni "Yeni Ekonomi Modeli" raporlarından bile daha çok geren bir bug'una rastlarsan hemen haber et — mükemmeliyetçilik damarım kabarır, <span className="text-white font-semibold">gece yarısı kararnamelerinden bile hızlı düzeltiriz</span>. Estetik kusurlar mı? Bi ara el atar, eklerim.
+              <span className="text-gray-900 font-semibold">Müfredatı olabildiğince toparladım</span>; sitenin seni sınavdan bile daha çok geren bir bug'una rastlarsan hemen haber et, <span className="text-gray-900 font-semibold">gece yarısı kararnamelerinden bile hızlı düzeltiriz</span>. Estetik kusurlar mı? Bi ara el atar, eklerim.
             </p>
 
             <p className="text-base">
-              Biliyorum: kiminiz <span className="text-white font-semibold">askere 30'unda gitmek için</span>, kiminiz <span className="text-white font-semibold">aile evinden kaçmak için</span>, kiminiz "insan sevgisi"nden bihaberken yine de <span className="text-white font-semibold">tıp yazmak için</span>, kiminiz adalet duygusuyla pek işi yokken <span className="text-white font-semibold">hukuk kapısını çalmak için</span>, kiminiz "ben zaten konuşkanım" özgüveniyle <span className="text-white font-semibold">psikoloji yazmak için</span>, kiminiz formüllere alerjisi var ama "statü sağlar" diye <span className="text-white font-semibold">mühendislik peşinde</span>, kiminiz de "girişimciliğin mega starı olacağım" derken belki bir <span className="text-white font-semibold">işletme diplomasına sığınmak için</span> buradasınız.
+              Biliyorum: kiminiz <span className="text-gray-900 font-semibold">askere 30'unda gitmek için</span>, kiminiz <span className="text-gray-900 font-semibold">aile evinden kaçmak için</span>, kiminiz "insan sevgisi"nden bihaberken yine de <span className="text-gray-900 font-semibold">tıp yazmak için</span>, kiminiz adalet duygusuyla pek işi yokken <span className="text-gray-900 font-semibold">hukuk kapısını çalmak için</span>, kiminiz "ben zaten konuşkanım" özgüveniyle <span className="text-gray-900 font-semibold">psikoloji yazmak için</span>, kiminiz formüllere alerjisi var ama "statü sağlar" diye <span className="text-gray-900 font-semibold">mühendislik için</span>, kiminiz de "girişimciliğin mega starı olacağım" derken belki bir <span className="text-gray-900 font-semibold">işletme diplomasına sığınmak için</span> buradasınız.
             </p>
 
-            <p className="text-base font-medium text-gray-300 my-5">
-              Haddim değil, umurumda da değil — ama şunu unutmayın: <span className="text-white font-semibold">Sınav hayatın tamamı değil</span>; inan, <span className="text-white font-semibold">küçük bir oyun</span>. İstediğini, istediğin niyetle kazan — fark etmez. <span className="text-white font-semibold">Kendi ayaklarının üzerinde durduğunda asıl oyun başlayacak</span>. Kendini bir an önce hayata at; <span className="text-white font-semibold">çalış, üret, öğren, biraz da keyif al</span>. Diploma tek başına kimseyi büyütmüyor; <span className="text-white font-semibold">deneyim, yetenek ve azim</span> olmadanda hiçbir yere varılmıyor. Bu site hayatının bir noktasında işe yararsa ne mutlu. <span className="text-white font-bold text-lg">Başarılar.</span>
+            <p className="text-base font-medium text-gray-600 my-5">
+              Haddim değil, umurumda da değil — ama şunu unutmayın: <span className="text-gray-900 font-semibold">Sınav hayatın tamamı değil</span>; inan, <span className="text-gray-900 font-semibold">küçük bir oyun</span>. İstediğini, istediğin niyetle kazan — fark etmez. <span className="text-gray-900 font-semibold">Kendi ayaklarının üzerinde durduğunda asıl oyun başlayacak</span>. Kendini bir an önce hayata at; <span className="text-gray-900 font-semibold">çalış, üret, öğren, biraz da keyif al</span>. Diploma tek başına kimseyi büyütmüyor; <span className="text-gray-900 font-semibold">deneyim, yetenek ve azim</span> olmadanda hiçbir yere varılmıyor. Bu site hayatının bir noktasında işe yararsa ne mutlu. <span className="text-gray-900 font-bold text-lg">Başarılar.</span>
             </p>
           </div>
 
@@ -160,7 +162,7 @@ export default function Home() {
         {/* Basit Aşağı Kaydırma Uyarısı */}
         {showScrollText && (
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center transition-opacity duration-300">
-            <p className="text-gray-300 text-lg font-semibold">
+            <p className="text-gray-600 text-lg font-semibold">
               Arayüze erişmek için aşağı kaydırın ↓
             </p>
           </div>
@@ -168,7 +170,7 @@ export default function Home() {
       </div>
 
       {/* İçerik Bölümü - TYT Dersleri */}
-      <div id="content" className="min-h-screen bg-black py-24 px-6">
+      <div id="content" className="min-h-screen py-24 px-6" style={{backgroundColor: '#2d2d2d'}}>
         <div className="max-w-7xl mx-auto">
           
           {/* Başlık */}
@@ -853,7 +855,7 @@ export default function Home() {
                style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif' }}>
               <span className="text-white font-semibold">YÖK Atlas</span> — devletin resmi üniversite arşivi. 
               Arayüzü ömrü uzun olsun dedemin kokusunu hatırlatıyor... 
-              Neyse yiğidi öldür hakkını yeme, işlerini iyi yapıyorlar, <span className="text-white font-semibold">patron onlar</span>, mecbur saygı duyuyoruz.
+              Ama yiğidi öldür hakkını yeme, işlerini iyi yapıyorlar, <span className="text-white font-semibold">patron onlar</span>, mecbur saygı duyuyoruz.
             </p>
             
             <p className="text-gray-300 text-base leading-relaxed mb-4">
