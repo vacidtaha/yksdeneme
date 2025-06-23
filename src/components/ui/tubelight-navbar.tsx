@@ -30,10 +30,10 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
     if (pathname.includes('/dersler/tyt/matematik')) return 'Matematik'
     if (pathname.includes('/dersler/tyt/fen')) return 'Fen Bilimleri'
     if (pathname.includes('/dersler/tyt/sosyal')) return 'Sosyal Bilimler'
-    if (pathname.includes('/dersler/ayt/sayisal/matematik')) return 'AYT Matematik'
-    if (pathname.includes('/dersler/ayt/sayisal/fizik')) return 'Fizik'
-    if (pathname.includes('/dersler/ayt/sayisal/kimya')) return 'Kimya'
-    if (pathname.includes('/dersler/ayt/sayisal/biyoloji')) return 'Biyoloji'
+    if (pathname.includes('/dersler/ayt/matematik')) return 'AYT Matematik'
+    if (pathname.includes('/dersler/ayt/fizik')) return 'Fizik'
+    if (pathname.includes('/dersler/ayt/kimya')) return 'Kimya'
+    if (pathname.includes('/dersler/ayt/biyoloji')) return 'Biyoloji'
     if (pathname.includes('/dersler/ayt/sozel/edebiyat')) return 'Edebiyat'
     if (pathname.includes('/dersler/ayt/sozel/tarih')) return 'Tarih'
     if (pathname.includes('/dersler/ayt/sozel/cografya')) return 'Coğrafya'
@@ -58,10 +58,10 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
     sayisal: {
       name: "Sayısal",
       subjects: [
-        { name: "Matematik", icon: Calculator, href: "/dersler/ayt/sayisal/matematik", color: "#34C759" },
-        { name: "Fizik", icon: Atom, href: "/dersler/ayt/sayisal/fizik", color: "#007AFF" },
-        { name: "Kimya", icon: Beaker, href: "/dersler/ayt/sayisal/kimya", color: "#FF9F0A" },
-        { name: "Biyoloji", icon: TestTube, href: "/dersler/ayt/sayisal/biyoloji", color: "#34C759" }
+        { name: "Matematik", icon: Calculator, href: "/dersler/ayt/matematik", color: "#34C759" },
+        { name: "Fizik", icon: Atom, href: "/dersler/ayt/fizik", color: "#007AFF" },
+        { name: "Kimya", icon: Beaker, href: "/dersler/ayt/kimya", color: "#FF9F0A" },
+        { name: "Biyoloji", icon: TestTube, href: "/dersler/ayt/biyoloji", color: "#34C759" }
       ]
     },
     sozel: {

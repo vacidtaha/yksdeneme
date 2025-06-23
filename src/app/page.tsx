@@ -97,16 +97,14 @@ export default function Home() {
           
           {/* Sol Taraf - Logo */}
           <div className="flex justify-center items-center h-full">
-            <div className="bg-black rounded-lg shadow-2xl p-6" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05)'}}>
-              <Image
-                src="/yks.png"
-                alt="YKS"
-                width={400}
-                height={280}
-                priority
-                className="rounded-lg"
-              />
-            </div>
+            <Image
+              src="/yks.png"
+              alt="YKS"
+              width={500}
+              height={350}
+              priority
+              className="rounded-lg"
+            />
           </div>
 
           {/* Sağ Taraf - Karşılama Mesajı */}
@@ -435,7 +433,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
                       
                       {/* Matematik */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/matematik" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -450,14 +448,14 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>22 konu</span>
+                            <span>40 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Fizik */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/fizik" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -472,14 +470,14 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>18 konu</span>
+                            <span>26 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Kimya */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/kimya" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -494,14 +492,14 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>16 konu</span>
+                            <span>17 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Biyoloji */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/biyoloji" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -516,11 +514,11 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>12 konu</span>
+                            <span>18 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 )}
