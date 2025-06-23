@@ -52,7 +52,7 @@ export default function GizlilikPage() {
                 </h2>
               </div>
               <p className="text-base leading-relaxed" style={{color: '#86868b'}}>
-                YKSekeri ("Site", "biz") TYT & AYT hazırlığındaki öğrencilerin ücretsiz, reklamsız ve kâr amacı gütmeyen biçimde içerik, PDF özet, interaktif test ve resmi ÖSYM bağlantılarına ulaşmasını sağlar. Kullanıcı kaydı, üyelik veya giriş sistemi yoktur. Gizliliğinize saygı duyuyor, zorunlu olmadıkça hiçbir kişisel veri işlemiyoruz. Bu metin hangi verileri neden işlediğimizi ve haklarınızı açıklar.
+                YKSekeri (&quot;Site&quot;, &quot;biz&quot;) TYT & AYT hazırlığındaki öğrencilerin ücretsiz, reklamsız ve kâr amacı gütmeyen biçimde içerik, PDF özet, interaktif test ve resmi ÖSYM bağlantılarına ulaşmasını sağlar. Kullanıcı kaydı, üyelik veya giriş sistemi yoktur. Gizliliğinize saygı duyuyor, zorunlu olmadıkça hiçbir kişisel veri işlemiyoruz. Bu metin hangi verileri neden işlediğimizi ve haklarınızı açıklar.
               </p>
             </div>
           </section>
@@ -109,7 +109,7 @@ export default function GizlilikPage() {
                     </tr>
                     <tr>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>Geri bildirim mesajları</td>
-                      <td className="py-3 px-2" style={{color: '#86868b'}}>"Bize Ulaşın" formu</td>
+                      <td className="py-3 px-2" style={{color: '#86868b'}}>&quot;Bize Ulaşın&quot; formu</td>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>Sorularınızı yanıtlamak</td>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>E-posta sistemimizde; 90 gün içinde silinir</td>
                     </tr>
@@ -154,7 +154,7 @@ export default function GizlilikPage() {
                 
                 <div className="p-4 rounded-xl" style={{backgroundColor: 'rgba(255,255,255,0.05)'}}>
                   <h4 className="font-semibold mb-2" style={{color: '#f5f5f7'}}>Local Storage</h4>
-                  <p style={{color: '#86868b'}}>İlerleme verileri yalnızca sizde saklanır. İsterseniz tarayıcınızın "Site Verilerini Temizle" özelliğini kullanarak silebilirsiniz.</p>
+                  <p style={{color: '#86868b'}}>İlerleme verileri yalnızca sizde saklanır. İsterseniz tarayıcınızın &quot;Site Verilerini Temizle&quot; özelliğini kullanarak silebilirsiniz.</p>
                 </div>
                 
                 <div className="p-4 rounded-xl" style={{backgroundColor: 'rgba(255,255,255,0.05)'}}>
@@ -232,7 +232,7 @@ export default function GizlilikPage() {
                     <tr className="border-b" style={{borderColor: 'rgba(255,255,255,0.05)'}}>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>YouTube (gömülü videolar)</td>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>Konu anlatım videolarını göstermek</td>
-                      <td className="py-3 px-2" style={{color: '#86868b'}}>IP adresi, YouTube'un kendi çerezleri</td>
+                      <td className="py-3 px-2" style={{color: '#86868b'}}>IP adresi, YouTube&apos;un kendi çerezleri</td>
                       <td className="py-3 px-2">
                         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" 
                            className="text-blue-400 hover:text-blue-300 underline">
@@ -243,7 +243,7 @@ export default function GizlilikPage() {
                     <tr>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>osym.gov.tr bağlantıları</td>
                       <td className="py-3 px-2" style={{color: '#86868b'}}>Resmî çıkmış soru PDF'lerine yönlendirme</td>
-                      <td className="py-3 px-2" style={{color: '#86868b'}}>Tıklamada tarayıcınız "referer" başlığını gönderebilir</td>
+                      <td className="py-3 px-2" style={{color: '#86868b'}}>Tıklamada tarayıcınız &quot;referer&quot; başlığını gönderebilir</td>
                       <td className="py-3 px-2">
                         <a href="https://www.osym.gov.tr" target="_blank" rel="noopener noreferrer" 
                            className="text-blue-400 hover:text-blue-300 underline">
@@ -469,7 +469,7 @@ export default function GizlilikPage() {
               
               <div className="space-y-6">
                 <p className="text-base leading-relaxed" style={{color: '#86868b'}}>
-                  Hukuki/teknik ihtiyaç hâlinde bu sayfayı güncelleyebiliriz. Üstteki "Son güncelleme" tarihi 
+                  Hukuki/teknik ihtiyaç hâlinde bu sayfayı güncelleyebiliriz. Üstteki &quot;Son güncelleme&quot; tarihi 
                   değiştiğinde yeni sürüm yürürlüğe girmiş sayılır.
                 </p>
                 

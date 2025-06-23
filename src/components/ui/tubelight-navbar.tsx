@@ -33,12 +33,10 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
     if (pathname.includes('/dersler/ayt/fizik')) return 'Fizik'
     if (pathname.includes('/dersler/ayt/kimya')) return 'Kimya'
     if (pathname.includes('/dersler/ayt/biyoloji')) return 'Biyoloji'
-    if (pathname.includes('/dersler/ayt/sozel/edebiyat')) return 'Edebiyat'
-    if (pathname.includes('/dersler/ayt/sozel/tarih')) return 'Tarih'
-    if (pathname.includes('/dersler/ayt/sozel/cografya')) return 'Coğrafya'
-    if (pathname.includes('/dersler/ayt/sozel/felsefe')) return 'Felsefe'
-    if (pathname.includes('/dersler/ayt/esit/matematik')) return 'EA Matematik'
-    if (pathname.includes('/dersler/ayt/esit/edebiyat')) return 'EA Edebiyat'
+    if (pathname.includes('/dersler/ayt/edebiyat')) return 'Edebiyat'
+    if (pathname.includes('/dersler/ayt/tarih')) return 'Tarih'
+    if (pathname.includes('/dersler/ayt/cografya')) return 'Coğrafya'
+        if (pathname.includes('/dersler/ayt/felsefe')) return 'Felsefe'
     if (pathname.includes('/dersler/ayt/esit/tarih')) return 'EA Tarih'
     if (pathname.includes('/dersler/ayt/esit/cografya')) return 'EA Coğrafya'
     return 'Dersler'
@@ -66,19 +64,19 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
     sozel: {
       name: "Sözel",
       subjects: [
-        { name: "Edebiyat", icon: Book, href: "/dersler/ayt/sozel/edebiyat", color: "#FF2D92" },
-        { name: "Tarih", icon: Globe, href: "/dersler/ayt/sozel/tarih", color: "#FF9F0A" },
-        { name: "Coğrafya", icon: MapPin, href: "/dersler/ayt/sozel/cografya", color: "#007AFF" },
-        { name: "Felsefe", icon: Brain, href: "/dersler/ayt/sozel/felsefe", color: "#AF52DE" }
+        { name: "Edebiyat", icon: Book, href: "/dersler/ayt/edebiyat", color: "#FF2D92" },
+        { name: "Tarih", icon: Globe, href: "/dersler/ayt/tarih", color: "#FF9F0A" },
+        { name: "Coğrafya", icon: MapPin, href: "/dersler/ayt/cografya", color: "#007AFF" },
+        { name: "Felsefe", icon: Brain, href: "/dersler/ayt/felsefe", color: "#AF52DE" }
       ]
     },
     esit: {
       name: "Eşit Ağırlık",
       subjects: [
-        { name: "Matematik", icon: Calculator, href: "/dersler/ayt/esit/matematik", color: "#34C759" },
-        { name: "Edebiyat", icon: Book, href: "/dersler/ayt/esit/edebiyat", color: "#FF2D92" },
-        { name: "Tarih", icon: Globe, href: "/dersler/ayt/esit/tarih", color: "#FF9F0A" },
-        { name: "Coğrafya", icon: MapPin, href: "/dersler/ayt/esit/cografya", color: "#007AFF" }
+        { name: "Matematik", icon: Calculator, href: "/dersler/ayt/matematik", color: "#34C759" },
+        { name: "Edebiyat", icon: Book, href: "/dersler/ayt/edebiyat", color: "#FF2D92" },
+        { name: "Tarih", icon: Globe, href: "/dersler/ayt/tarih", color: "#FF9F0A" },
+        { name: "Coğrafya", icon: MapPin, href: "/dersler/ayt/cografya", color: "#007AFF" }
       ]
     }
   }

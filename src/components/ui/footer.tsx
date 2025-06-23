@@ -77,7 +77,8 @@ export function Footer() {
                 { name: 'Kimya', href: '/dersler/ayt/kimya' },
                 { name: 'Biyoloji', href: '/dersler/ayt/biyoloji' },
                 { name: 'Tarih', href: '/dersler/ayt/tarih' },
-                { name: 'Coğrafya', href: '/dersler/ayt/cografya' }
+                { name: 'Coğrafya', href: '/dersler/ayt/cografya' },
+                { name: 'Felsefe Grubu', href: '/dersler/ayt/felsefe' }
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.href} 

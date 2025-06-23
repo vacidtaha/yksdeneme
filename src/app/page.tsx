@@ -123,22 +123,22 @@ export default function Home() {
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
               <span className="text-blue-600 mr-2">•</span>
-              <span className="text-blue-800"><strong>Güncel TYT/AYT konularının net haritası</strong> – &quot;hangi başlık nerede&quot; diye kaybolma.</span>
+              <span className="text-blue-800"><strong>Düzenli konu haritası</strong> – müfredatın tamamı sistematik sıralanmış, &quot;sırada ne var&quot; diye düşünmene gerek yok.</span>
             </div>
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
               <span className="text-blue-600 mr-2">•</span>
-              <span className="text-blue-800"><strong>Seçilmiş YouTube dersleri</strong> – her konu için en anlaşılır, hocaların video listesi.</span>
+              <span className="text-blue-800"><strong>Kaliteli video dersleri</strong> – her konu için özenle seçilmiş, en açık anlatan hocaların ders arşivi.</span>
             </div>
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
               <span className="text-blue-600 mr-2">•</span>
-              <span className="text-blue-800"><strong>MEB damgalı örnek soru arşivi</strong> – yıl, PDF, cevap anahtarı tek tıkta.</span>
+              <span className="text-blue-800"><strong>Kapsamlı soru havuzu</strong> – hem resmi ÖSYM soruları hem de yapay zeka destekli interaktif sorularla pratik yap.</span>
             </div>
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-4 flex items-start text-sm max-w-lg">
               <span className="text-blue-600 mr-2">•</span>
-              <span className="text-blue-800"><strong>Cep boyu özetler</strong> – bir sayfalık &quot;son tekrar&quot; PDF&apos;leri; indir, bastır, yapıştır.</span>
+              <span className="text-blue-800"><strong>Pratik özet kağıtları</strong> – son tekrar için bir sayfalık özetler; yazdır, çantana at, her yerde çalış.</span>
             </div>
 
             <p className="text-base">
@@ -533,7 +533,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
                       
                       {/* Matematik */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/matematik" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -552,10 +552,10 @@ export default function Home() {
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Edebiyat */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/edebiyat" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -574,10 +574,10 @@ export default function Home() {
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Tarih */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/tarih" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -596,10 +596,10 @@ export default function Home() {
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Coğrafya */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/cografya" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -614,11 +614,11 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>15 konu</span>
+                            <span>25 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -633,7 +633,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
                       
                       {/* Edebiyat */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/edebiyat" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -652,10 +652,10 @@ export default function Home() {
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Tarih */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/tarih" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -674,10 +674,10 @@ export default function Home() {
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Coğrafya */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/cografya" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -692,14 +692,14 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>15 konu</span>
+                            <span>25 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Felsefe */}
-                      <div className="group cursor-pointer">
+                      <Link href="/dersler/ayt/felsefe" className="group cursor-pointer">
                         <div className="rounded-3xl p-8 h-72 flex flex-col justify-between transition-all duration-300 border hover:bg-white/8 hover:border-white/20"
                              style={{backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(24px)'}}>
                           <div className="flex flex-col">
@@ -708,17 +708,17 @@ export default function Home() {
                               <Brain className="w-7 h-7" style={{color: '#8B5CF6'}} />
                             </div>
                             <h3 className="text-2xl font-semibold text-white mb-3" 
-                                style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif' }}>Felsefe</h3>
+                                style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif' }}>Felsefe Grubu</h3>
                             <p className="text-gray-400 text-sm font-normal leading-relaxed">
-                              Bilgi felsefesi, ahlak felsefesi ve felsefi akımlar analizi.
+                              Felsefe, psikoloji, sosyoloji ve mantık disiplinlerinin kapsamlı analizi.
                             </p>
                           </div>
                           <div className="flex items-center justify-between text-gray-500 text-sm font-medium">
-                            <span>12 konu</span>
+                            <span>32 konu</span>
                             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" />
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 )}
