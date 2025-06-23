@@ -188,7 +188,7 @@ export default function IletisimPage() {
       
       <Header alwaysShow={true} />
 
-      <div className="max-w-6xl mx-auto px-4 py-12 pt-20 sm:pt-24 lg:pt-32">
+      <div className="max-w-6xl mx-auto px-4 py-12 pt-32">
         
         {/* Header */}
         <div className="text-center mb-12">

@@ -159,7 +159,7 @@ export default function AytFizikPage() {
       `}</style>
       <Header alwaysShow={true} />
       
-      <div className="pt-20 sm:pt-24 lg:pt-32">
+      <div className="pt-32">
         {/* Ana Header */}
         <div className="text-center mb-12 px-4">
           <div className="max-w-4xl mx-auto">

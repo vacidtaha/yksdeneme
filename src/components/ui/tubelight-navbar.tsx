@@ -131,7 +131,7 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
 
   // Dropdown dışına tıklanırsa kapat
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (showDropdown) {
         const target = event.target as HTMLElement
         if (!target.closest('.dropdown-container') && !target.closest('.dropdown-menu')) {
@@ -140,33 +140,19 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
       }
     }
 
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && showDropdown) {
-        setShowDropdown(false)
-      }
-    }
-
     document.addEventListener('mousedown', handleClickOutside)
-    document.addEventListener('touchstart', handleClickOutside)
-    document.addEventListener('keydown', handleEscape)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-      document.removeEventListener('touchstart', handleClickOutside)
-      document.removeEventListener('keydown', handleEscape)
-    }
+    return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [showDropdown])
 
   return (
     <div
       className={cn(
-        disableFixed 
-          ? "static" 
-          : "fixed bottom-4 md:bottom-0 lg:top-0 left-1/2 -translate-x-1/2 z-50 mb-0 md:mb-6 lg:pt-6",
+        disableFixed ? "static" : "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 sm:pt-6",
         className,
       )}
     >
       <div 
-        className="flex items-center gap-1 sm:gap-2 lg:gap-3 bg-black/20 py-1.5 md:py-1 px-1.5 md:px-1 rounded-full border border-white/10"
+        className="flex items-center gap-3 bg-black/20 py-1 px-1 rounded-full border border-white/10"
         style={{
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)'
@@ -190,7 +176,7 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
                     setShowDropdown(!showDropdown)
                   }}
                   className={cn(
-                    "relative cursor-pointer text-xs sm:text-sm font-semibold px-3 sm:px-4 lg:px-6 py-2.5 sm:py-2 rounded-full transition-colors flex items-center gap-1 min-h-[44px] sm:min-h-auto",
+                    "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center gap-1",
                     "text-white/90 hover:text-white",
                     isActive && "bg-white/20 text-white",
                   )}
@@ -206,7 +192,7 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
                 {/* Dropdown Menu */}
                 {showDropdown && (
                   <div 
-                    className="fixed bottom-20 md:bottom-auto md:top-24 left-1/2 transform -translate-x-1/2 w-[95vw] max-w-[700px] md:w-[700px] rounded-2xl shadow-2xl dropdown-menu max-h-[70vh] overflow-y-auto"
+                    className="fixed top-24 left-1/2 transform -translate-x-1/2 w-[700px] rounded-2xl shadow-2xl dropdown-menu"
                     style={{
                       backgroundColor: 'rgba(248, 248, 248, 0.95)',
                       backdropFilter: 'blur(20px)',
@@ -216,8 +202,8 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
                     }}
                     onMouseLeave={() => setShowDropdown(false)}
                   >
-                    <div className="p-4 md:p-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                    <div className="p-6">
+                      <div className="grid grid-cols-2 gap-8">
                         
                         {/* TYT Bölümü */}
                         <div>
@@ -232,7 +218,7 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
                                 <Link
                                   key={subject.name}
                                   href={subject.href}
-                                  className="flex items-center gap-3 p-4 md:p-3 rounded-xl transition-all duration-200 group hover:shadow-md min-h-[48px]"
+                                  className="flex items-center gap-3 p-3 rounded-xl transition-all duration-200 group hover:shadow-md"
                                   style={{
                                     backgroundColor: 'rgba(255, 255, 255, 0.6)',
                                     border: '1px solid rgba(0, 0, 0, 0.05)'
@@ -283,14 +269,14 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
                                       {area.name}
                                     </span>
                                   </div>
-                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                  <div className="grid grid-cols-2 gap-2">
                                     {area.subjects.map((subject) => {
                                       const SubjectIcon = subject.icon
                                       return (
                                         <Link
                                           key={subject.name}
                                           href={subject.href}
-                                          className="flex items-center gap-2 p-3 sm:p-2 rounded-lg transition-all duration-200 text-sm sm:text-xs font-medium min-h-[44px] sm:min-h-auto"
+                                          className="flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-xs font-medium"
                                           style={{
                                             backgroundColor: 'rgba(255, 255, 255, 0.8)',
                                             border: '1px solid rgba(0, 0, 0, 0.03)',
@@ -341,7 +327,7 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
                 setActiveTab(item.name)
               }}
               className={cn(
-                "relative cursor-pointer text-xs sm:text-sm font-semibold px-3 sm:px-4 lg:px-6 py-2.5 sm:py-2 rounded-full transition-colors min-h-[44px] sm:min-h-auto flex items-center justify-center",
+                "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
                 "text-white/90 hover:text-white",
                 isActive && "bg-white/20 text-white",
               )}
