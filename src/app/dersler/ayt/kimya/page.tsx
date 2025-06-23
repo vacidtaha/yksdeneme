@@ -26,7 +26,6 @@ export default function AytKimyaPage() {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
   const [openSections, setOpenSections] = useState<string[]>([]);
   const [completedTopics, setCompletedTopics] = useState<string[]>([]);
-  const [focusedElement, setFocusedElement] = useState<string>('');
   const [showProgressWarning, setShowProgressWarning] = useState(true);
 
   // AYT Kimya Konu Başlıkları
@@ -102,7 +101,6 @@ export default function AytKimyaPage() {
 
   const selectTopic = (topicId: string) => {
     setSelectedTopic(topicId);
-    setFocusedElement(topicId);
   };
 
   const markTopicComplete = (topicId: string) => {
@@ -271,7 +269,7 @@ export default function AytKimyaPage() {
                           e.currentTarget.style.backgroundColor = 'white';
                         }}
                       >
-                        PDF'i Önizle
+                        PDF&apos;i Önizle
                       </button>
                     </div>
 
@@ -292,7 +290,7 @@ export default function AytKimyaPage() {
                       </div>
                       
                       <p className="text-xs text-gray-400 mb-4 leading-relaxed">
-                        Geçmiş AYT sınavlarından yayınlanmış örnek sorulardan ve yapay zekanın ürettiği sorulardan 
+                        Geçmiş AYT sınavlarından yayınlanmış örnek sorulardan ve yapay zeka&apos;nın ürettiği sorulardan 
                         oluşan {getCurrentSubTopic()?.title.toLowerCase()} soruları. Adım adım çözümlerle interaktif deneyim.
                       </p>
                       

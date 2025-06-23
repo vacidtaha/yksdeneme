@@ -41,7 +41,7 @@ export default function KaynaklarPage() {
             Kaynaklar
           </h1>
           <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed mb-8" style={{color: '#6e6e73'}}>
-            Geçmiş yıl sınav sorularına ÖSYM'nin resmi PDF önizleme sayfaları üzerinden erişin.
+            Geçmiş yıl sınav sorularına ÖSYM&apos;nin resmi PDF önizleme sayfaları üzerinden erişin.
           </p>
           
           {/* Telif Hakları Uyarısı */}
@@ -57,10 +57,10 @@ export default function KaynaklarPage() {
                 </h3>
                 <p className="text-sm leading-relaxed mb-3" style={{color: '#6e6e73'}}>
                   Sınav soruları <strong>Türk Fikir ve Sanat Eserleri Kanunu (FSEK)</strong> kapsamında telif hakkı koruması altındadır. 
-                  Bu nedenle sorular doğrudan sitemizde barındırılmamakta, yalnızca <strong>ÖSYM'nin resmi PDF önizleme sayfalarına</strong> yönlendirme yapılmaktadır.
+                  Bu nedenle sorular doğrudan sitemizde barındırılmamakta, yalnızca <strong>ÖSYM&apos;nin resmi PDF önizleme sayfalarına</strong> yönlendirme yapılmaktadır.
                 </p>
                 <p className="text-sm" style={{color: '#86868b'}}>
-                  Tüm linkler ÖSYM'nin dokuman.osym.gov.tr ve cdn.osym.gov.tr alt domainlerine yönlendirmektedir.
+                  Tüm linkler ÖSYM&apos;nin dokuman.osym.gov.tr ve cdn.osym.gov.tr alt domainlerine yönlendirmektedir.
                 </p>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function KaynaklarPage() {
                  Temel Yeterlilik Testi - Geçmiş yıl soruları
                </p>
                <p className="text-sm mt-1" style={{color: '#86868b'}}>
-                 💡 Cevap anahtarları PDF'lerin sonunda yer almaktadır
+                 💡 Cevap anahtarları PDF&apos;lerin sonunda yer almaktadır
                </p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function KaynaklarPage() {
                  Alan Yeterlilik Testi - Geçmiş yıl soruları
                </p>
                <p className="text-sm mt-1" style={{color: '#86868b'}}>
-                 💡 Cevap anahtarları PDF'lerin sonunda yer almaktadır
+                 💡 Cevap anahtarları PDF&apos;lerin sonunda yer almaktadır
                </p>
             </div>
           </div>

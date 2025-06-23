@@ -11,7 +11,11 @@ export interface BalloonsProps {
   onLaunch?: () => void
 }
 
-const Balloons = React.forwardRef<HTMLDivElement, BalloonsProps>(
+export interface BalloonsRef {
+  launchAnimation: () => void;
+}
+
+const Balloons = React.forwardRef<BalloonsRef, BalloonsProps>(
   ({ type = "default", text, fontSize = 120, color = "#000000", className, onLaunch }, ref) => {
     const containerRef = React.useRef<HTMLDivElement>(null)
     
@@ -35,8 +39,7 @@ const Balloons = React.forwardRef<HTMLDivElement, BalloonsProps>(
 
     // Экспортируем метод запуска анимации
     React.useImperativeHandle(ref, () => ({
-      launchAnimation,
-      ...(containerRef.current || {})
+      launchAnimation
     }), [launchAnimation])
 
     return <div ref={containerRef} className={cn("balloons-container", className)} />

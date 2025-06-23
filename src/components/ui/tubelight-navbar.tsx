@@ -21,7 +21,6 @@ interface NavBarProps {
 export function NavBar({ items, className, disableFixed = false }: NavBarProps) {
   const pathname = usePathname()
   const [activeTab, setActiveTab] = useState("")
-  const [isMobile, setIsMobile] = useState(false)
   const [showDropdown, setShowDropdown] = useState(false)
 
   // Ders sayfası adını döndüren fonksiyon
@@ -128,15 +127,7 @@ export function NavBar({ items, className, disableFixed = false }: NavBarProps) 
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [pathname, items])
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
 
-    handleResize()
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
 
   // Dropdown dışına tıklanırsa kapat
   useEffect(() => {

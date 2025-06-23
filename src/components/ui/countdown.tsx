@@ -24,10 +24,10 @@ export function Countdown({ isOpen, onAnimationComplete }: CountdownProps) {
     milliseconds: 0
   });
 
-  const targetDate = new Date('2026-06-20T10:00:00+03:00'); // 20 Haziran 2026 sabah 10:00 Türkiye saati
-
   useEffect(() => {
     if (!isOpen) return;
+    
+    const targetDate = new Date('2026-06-20T10:00:00+03:00'); // 20 Haziran 2026 sabah 10:00 Türkiye saati
 
     const calculateTimeLeft = () => {
       const now = new Date();

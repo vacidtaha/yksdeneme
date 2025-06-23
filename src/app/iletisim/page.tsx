@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { CheckCircle, AlertCircle, Send, User, Mail, MessageSquare, Phone, MapPin, Clock } from "lucide-react";
+import { CheckCircle, AlertCircle, Send, User, Mail, MessageSquare, Phone } from "lucide-react";
 import { Header } from "@/components/ui/header";
 
 export default function IletisimPage() {

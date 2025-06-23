@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Header } from "@/components/ui/header";
 import { Footer } from "@/components/ui/footer";
-import { BookOpen, Calculator, TestTube, Globe, BarChart3, Target, Zap, ArrowRight, Atom, Users, BookMarked, Beaker, Book, MapPin, Brain } from "lucide-react";
+import { BookOpen, Calculator, TestTube, Globe, BarChart3, Target, Zap, ArrowRight, Atom, Beaker, Book, MapPin, Brain } from "lucide-react";
 
 export default function Home() {
   const [showWarning, setShowWarning] = useState(true);
@@ -116,14 +116,14 @@ export default function Home() {
             </p>
             
             <p className="text-base">
-              Açık konuşayım: Bugün üniversite okumayı <span className="text-gray-900 font-semibold">hararetle savunduğum söylenemez</span>. Yine de "ille de sınava gireceğim" diyorsan, burası işini kolaylaştırır.
+              Açık konuşayım: Bugün üniversite okumayı <span className="text-gray-900 font-semibold">hararetle savunduğum söylenemez</span>. Yine de &quot;ille de sınava gireceğim&quot; diyorsan, burası işini kolaylaştırır.
             </p>
 
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Burada bulacakların</h3>
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
               <span className="text-blue-600 mr-2">•</span>
-              <span className="text-blue-800"><strong>Güncel TYT/AYT konularının net haritası</strong> – "hangi başlık nerede" diye kaybolma.</span>
+              <span className="text-blue-800"><strong>Güncel TYT/AYT konularının net haritası</strong> – &quot;hangi başlık nerede&quot; diye kaybolma.</span>
             </div>
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-2 flex items-start text-sm max-w-lg">
@@ -138,15 +138,15 @@ export default function Home() {
             
             <div className="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-4 flex items-start text-sm max-w-lg">
               <span className="text-blue-600 mr-2">•</span>
-              <span className="text-blue-800"><strong>Cep boyu özetler</strong> – bir sayfalık "son tekrar" PDF'leri; indir, bastır, yapıştır.</span>
+              <span className="text-blue-800"><strong>Cep boyu özetler</strong> – bir sayfalık &quot;son tekrar&quot; PDF&apos;leri; indir, bastır, yapıştır.</span>
             </div>
 
             <p className="text-base">
-              <span className="text-gray-900 font-semibold">Müfredatı olabildiğince toparladım</span>; sitenin seni sınavdan bile daha çok geren bir bug'una rastlarsan hemen haber et, <span className="text-gray-900 font-semibold">gece yarısı kararnamelerinden bile hızlı düzeltiriz</span>. Estetik kusurlar mı? Bi ara el atar, eklerim.
+              <span className="text-gray-900 font-semibold">Müfredatı olabildiğince toparladım</span>; sitenin seni sınavdan bile daha çok geren bir bug&apos;una rastlarsan hemen haber et, <span className="text-gray-900 font-semibold">gece yarısı kararnamelerinden bile hızlı düzeltiriz</span>. Estetik kusurlar mı? Bi ara el atar, eklerim.
             </p>
 
             <p className="text-base">
-              Biliyorum: kiminiz <span className="text-gray-900 font-semibold">askere 30'unda gitmek için</span>, kiminiz <span className="text-gray-900 font-semibold">aile evinden kaçmak için</span>, kiminiz "insan sevgisi"nden bihaberken yine de <span className="text-gray-900 font-semibold">tıp yazmak için</span>, kiminiz adalet duygusuyla pek işi yokken <span className="text-gray-900 font-semibold">hukuk kapısını çalmak için</span>, kiminiz "ben zaten konuşkanım" özgüveniyle <span className="text-gray-900 font-semibold">psikoloji yazmak için</span>, kiminiz formüllere alerjisi var ama "statü sağlar" diye <span className="text-gray-900 font-semibold">mühendislik için</span>, kiminiz de "girişimciliğin mega starı olacağım" derken belki bir <span className="text-gray-900 font-semibold">işletme diplomasına sığınmak için</span> buradasınız.
+              Biliyorum: kiminiz <span className="text-gray-900 font-semibold">askere 30&apos;unda gitmek için</span>, kiminiz <span className="text-gray-900 font-semibold">aile evinden kaçmak için</span>, kiminiz &quot;insan sevgisi&quot;nden bihaberken yine de <span className="text-gray-900 font-semibold">tıp yazmak için</span>, kiminiz adalet duygusuyla pek işi yokken <span className="text-gray-900 font-semibold">hukuk kapısını çalmak için</span>, kiminiz &quot;ben zaten konuşkanım&quot; özgüveniyle <span className="text-gray-900 font-semibold">psikoloji yazmak için</span>, kiminiz formüllere alerjisi var ama &quot;statü sağlar&quot; diye <span className="text-gray-900 font-semibold">mühendislik için</span>, kiminiz de &quot;girişimciliğin mega starı olacağım&quot; derken belki bir <span className="text-gray-900 font-semibold">işletme diplomasına sığınmak için</span> buradasınız.
             </p>
 
             <p className="text-base font-medium text-gray-600 my-5">
@@ -827,7 +827,7 @@ export default function Home() {
                 color: '#ffffff'
               }}
             >
-              <span>YÖK Atlas'a Git</span>
+              <span>YÖK Atlas&apos;a Git</span>
               <div className="w-5 h-5 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-white/20">
                 <ArrowRight className="w-4 h-4" />
               </div>
@@ -858,8 +858,8 @@ export default function Home() {
             
             <p className="text-gray-300 text-base leading-relaxed mb-4">
               Tabii <span className="text-white font-semibold">kampüs ortamı, sosyal hayat, gece hayatı</span> gibi konularda sessizler. 
-              Hele sanki hepiniz sadece akademi için gidiyorsunuz. <span className="text-gray-400 line-through">"Bu şehirde eğlence nasıl"</span> diye sorunca 
-              gözlerini kırpıştırıp konuyu değiştiriyorlar. Siz bu merak ettiklerinizi YouTube'dan bakın.
+              Hele sanki hepiniz sadece akademi için gidiyorsunuz. <span className="text-gray-400 line-through">&quot;Bu şehirde eğlence nasıl&quot;</span> diye sorunca 
+                              gözlerini kırpıştırıp konuyu değiştiriyorlar. Siz bu merak ettiklerinizi YouTube&apos;dan bakın.
             </p>
 
             <p className="text-gray-300 text-base leading-relaxed">

@@ -2,11 +2,11 @@
 
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
-import { Balloons } from '@/components/ui/balloons';
+import { Balloons, BalloonsRef } from '@/components/ui/balloons';
 import { Countdown } from '@/components/ui/countdown';
 
 export function Footer() {
-  const balloonsRef = useRef<any>(null);
+  const balloonsRef = useRef<BalloonsRef>(null);
   const [showCountdown, setShowCountdown] = useState(false);
   
   const handleSurpriseClick = () => {
