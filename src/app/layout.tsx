@@ -47,6 +47,22 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://yksekeri.com",
+    siteName: "YKS Şekeri",
+    title: "YKS Şekeri - YKS Hazırlığının Tatlı Hali",
+    description: "YKS hazırlığının tatlı hali. Video dersler, PDF'ler ve sorularla üniversite yolunda şeker gibi geçer. Ücretsiz TYT ve AYT dersleri.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "YKS Şekeri - YKS TYT AYT Hazırlık Platformu",
+      },
+    ],
+  },
   other: {
     "geo.region": "TR",
     "geo.country": "Turkey",
