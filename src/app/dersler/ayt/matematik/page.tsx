@@ -149,7 +149,7 @@ export default function AytMatematikPage() {
   };
 
   return (
-    <div className="min-h-screen text-white" style={{backgroundColor: '#2d2d2d'}}>
+    <div className="min-h-screen text-white" style={{backgroundColor: '#1f1f1f'}}>
       <style>{`
         @keyframes gradient {
           0% { background-position: 0% 50%; }
@@ -159,7 +159,7 @@ export default function AytMatematikPage() {
       `}</style>
       <Header alwaysShow={true} />
       
-      <div className="pt-32">
+      <div className="pt-20 sm:pt-24 lg:pt-32">
         {/* Ana Header */}
         <div className="text-center mb-12 px-4">
           <div className="max-w-4xl mx-auto">
@@ -238,8 +238,8 @@ export default function AytMatematikPage() {
         <div className="w-full">
           <div className="flex min-h-[600px]">
             
-            {/* Sol Sütun - PDF ve Sorular (0-20%) */}
-            <div className="w-[20%] flex justify-center">
+            {/* Sol Sütun - PDF ve Sorular (0-30%) */}
+            <div className="w-[30%] flex justify-center">
               <div className="sticky top-32 w-full max-w-xs">
                 {selectedTopic ? (
                   <div className="space-y-4">
@@ -339,8 +339,8 @@ export default function AytMatematikPage() {
               </div>
             </div>
 
-            {/* Orta Sütun - YouTube Videoları (20-70%) */}
-            <div className="w-[50%] flex justify-center">
+            {/* Orta Sütun - YouTube Videoları (30-70%) */}
+            <div className="w-[40%] flex justify-center">
               <div className="sticky top-40 w-full max-w-4xl">
                 {selectedTopic ? (
                   <div>

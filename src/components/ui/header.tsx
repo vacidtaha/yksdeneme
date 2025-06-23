@@ -48,15 +48,15 @@ export function Header({ alwaysShow = false }: HeaderProps) {
 
   return (
     <div className="fixed top-0 left-0 w-full z-40">
-      <div className="relative flex items-center px-4 py-2 min-h-[120px]">
-        <div className="flex items-center h-full ml-8">
+      <div className="relative flex items-center px-2 sm:px-4 py-2 min-h-[80px] sm:min-h-[100px] lg:min-h-[120px]">
+        <div className="flex items-center h-full ml-2 sm:ml-4 lg:ml-8">
           <Image
             src="/yks.png"
             alt="YKS"
-            width={160}
-            height={110}
+            width={120}
+            height={82}
             priority
-            className="rounded"
+            className="rounded sm:w-[140px] sm:h-[96px] lg:w-[160px] lg:h-[110px]"
           />
         </div>
         <div className="absolute inset-x-0 flex justify-center items-center h-full">
