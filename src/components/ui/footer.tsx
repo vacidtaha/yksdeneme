@@ -99,7 +99,6 @@ export function Footer() {
             <ul className="space-y-3">
               {[
                 { name: 'Kaynaklar', href: '/kaynaklar' },
-                { name: 'Ağacım', href: '/agacim' },
                 { name: 'İletişim', href: '/iletisim' }
               ].map((item) => (
                 <li key={item.name}>
